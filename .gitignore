@@ -1,0 +1,30 @@
+# .gitignore
+# Env
+.env
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*.sqlite3
+
+# Virtual envs
+.venv/
+venv/
+
+# VSCode
+.vscode/
+
+# Telethon session
+telegram_session.txt
+
+progress.pdf
+
+progress.txt
+
+test_result.txt
+test.ipynb
+training.csv
+
+yolo11x.pt
+
+darknet
