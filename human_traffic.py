@@ -12,7 +12,6 @@ print("Model loaded successfully.")
 
 def extract_traffic_details(img_path):
     # Load an image to test
-    #img_path = r"C:\Users\tanho\Documents\Projects\ktmb_service_bot\motor_traffic_data\traffic_image2701.jpg"
     
     image = cv2.imread(img_path)
     height, width, _ = image.shape
