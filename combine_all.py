@@ -27,9 +27,9 @@ async def round_to_nearest_minute(df):
     return df
 
 async def main():
-    df1 = pd.read_csv(r'C:\Users\tanho\Documents\Projects\ktmb_service_bot\combined_data\telegram_messages.csv', encoding='latin1')
-    df2 = pd.read_csv(r'C:\Users\tanho\Documents\Projects\ktmb_service_bot\combined_data\motor_traffic_data.csv', encoding='latin1')
-    df3 = pd.read_csv(r'C:\Users\tanho\Documents\Projects\ktmb_service_bot\combined_data\train_data.csv', encoding='latin1')
+    df1 = pd.read_csv(r'combined_data\telegram_messages.csv', encoding='latin1')
+    df2 = pd.read_csv(r'combined_data\motor_traffic_data.csv', encoding='latin1')
+    df3 = pd.read_csv(r'combined_data\train_data.csv', encoding='latin1')
     merged_df = pd.DataFrame(columns=['Date', "Message", "Classification", 'Name', 'Johor', 'Woodlands', 'Tuas', 'Availability'])
 
     df3['Date'] = pd.to_datetime(df3['Date'] + ' ' + df3['Time'])
